@@ -16,11 +16,11 @@ interface LinksBarProps {
   
     return (
         
-        <div className="flex justify-center">
-            <a className="mx-2" href='https://www.facebook.com/profile.php?id=100066609548992'><Icons name="Facebook" /></a>
-            <a className="mx-2" href='https://www.instagram.com/vrengtband/'><Icons name="Instagram" /></a>
-            <a className="mx-2" href='https://www.youtube.com/channel/UCDcqi3PFRHdWP6WWVdVR-xQ'><Icons name="Youtube" /></a>
-            <a className="mx-2" href='https://open.spotify.com/artist/61okwM4gkyEULHPVtNrfYd?si=ur4fsPOMTNST1-1tBZKnyA'><Icons name="Spotify" /></a>
+        <div className="flex justify-center my-3">
+            <a className="mx-4" href='https://www.facebook.com/profile.php?id=100066609548992'><Icons name="Facebook" /></a>
+            <a className="mx-4" href='https://www.instagram.com/vrengtband/'><Icons name="Instagram" /></a>
+            <a className="mx-4" href='https://open.spotify.com/artist/61okwM4gkyEULHPVtNrfYd?si=ur4fsPOMTNST1-1tBZKnyA'><Icons name="Spotify" /></a>
+            <a className="mx-4" href='https://www.youtube.com/channel/UCDcqi3PFRHdWP6WWVdVR-xQ'><Icons name="Youtube" /></a>
         </div>
     
     );
