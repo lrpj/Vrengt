@@ -20,6 +20,7 @@ module.exports = {
      },
      colors: {
       primary: '#f1dfc9',
+      secondary: 'ebbb75'
      },
       screens: {
         'sm': '576px',

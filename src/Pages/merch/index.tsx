@@ -2,7 +2,7 @@ import React from 'react';
 
 const MerchPage: React.FC = () => {
     return (
-        <div style={{ backgroundColor: 'blue', height: '100vh' }}>
+        <div className='py-20'>
             <h1>Tickets Page</h1>
             {/* Add your content here */}
         </div>
