@@ -3,7 +3,7 @@ import IMG from './images/vrengt1.jpg';
 import IMG2 from './images/vrengt2.jpg';
 import LinksBar from './components/links.tsx';
 import IMG2c from './images/vrengt2-crop.jpg';
-
+import CountdownTimer from './components/Countdown.tsx';
 
 
 function HomePage() {
@@ -21,7 +21,7 @@ function HomePage() {
 
         <div className="md:absolute lg:absolute inset-0 flex flex-col md:items-center justify-end pb-10 lg:p-0">
           <h1 className="text-maintext text-primary text-3xl mx-4 md:text-6xl lg:text-9xl">
-            Vrengt
+            vrengt
           </h1>
           <h2 className='text-primary mx-4'>Rosa skyer ute nå</h2>
           <LinksBar/>
@@ -29,12 +29,16 @@ function HomePage() {
 
       </div>
 
+      {/* Info view */}
+      <section className="flex flex-col md:flex-row items-center justify-top lg:h-screen md:mx-20 lg:mx-40 lg:mt-20 flex-auto ">
+        <CountdownTimer/>
+      </section>
+
       {/* second view */}
       <section className="flex flex-col md:flex-row items-center justify-top lg:h-screen md:mx-20 lg:mx-40 lg:mt-20 flex-auto  ">
         <img id='box' className="w-5/12 bg-center hidden md:block" src={IMG2c} alt="Second image cropped" />
-        <img className="flex-1/2 md:flex-auto object-cover px-10 w-92/12 h-80 bg-cover bg-center block md:hidden" src={IMG2} alt="Second view image" />
-        <div className=" text-primary px-10 md:p-5 lg:p-20 text-center max-w- 
-    screen-md w-full overflow-auto">
+        <img className="flex-1/2 md:flex-auto object-cover px-10 w-92/12 h-80 bg-cover bg-center block md:hidden" src={IMG2} alt="Second view image"/>
+        <div className=" text-primary px-10 md:p-5 lg:p-20 text-center max-w-screen-md w-full overflow-auto">
           <p className='whitespace-normal font md:text-lg lg:text-xl' >
           Vrengt ble dannet i 2017 i Moss, men flere av bandmedlemmene har en lang historie sammen, med tidligere samarbeid i diverse andre band og grupper. Denne tette musikalske kjemien er tydelig i deres samspill og kreative uttrykk.<br/><br/>
 
