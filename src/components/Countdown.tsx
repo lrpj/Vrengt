@@ -40,32 +40,22 @@ const Countdown: NextPage = () => {
     return () => clearInterval(interval);
   }, []);
 
-  return (
-          <div className="timer-wrapper">
-            <div className="timer-inner">
-              <div className="timer-segment">
-                <span className="time">{days}</span>
-                <span className="label">Days</span>
-              </div>
-              <span className="divider">:</span>
-              <div className="timer-segment">
-                <span className="time">{hours}</span>
-                <span className="label">Hours</span>
-              </div>
-              <span className="divider">:</span>
-              <div className="timer-segment">
-                <span className="time">{minutes}</span>
-                <span className="label">Minutes</span>
-              </div>
-              <span className="divider">:</span>
-              <div className="timer-segment">
-                <span className="time">{seconds}</span>
-                <span className="label">Seconds</span>
-              </div>
-            </div>
-          </div>  
+return (
+    <div className="whitespace-normal font md:text-lg lg:text-5xl text-primary">
+        <div className="">
+            <div className="flex ">
+                <span className="time">{days} dager : </span>
+           
+                <span className="time">{hours} timer : </span>
+        
           
-    );
+                <span className="time">{minutes} minuter : </span>
+                <span className="time">{seconds} sekunder </span>
+
+            </div>
+        </div>
+    </div>
+);
 };
 
 export default Countdown;

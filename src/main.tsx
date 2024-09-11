@@ -30,7 +30,8 @@ function HomePage() {
       </div>
 
       {/* Info view */}
-      <section className="flex flex-col md:flex-row items-center justify-top lg:h-screen md:mx-20 lg:mx-40 lg:mt-20 flex-auto ">
+      <section className="md:flex-row items-center justify-top lg:h-screen md:mx-20 lg:mx-40 lg:mt-20 flex-auto ">
+        <h2 className="text-primary px-10 md:p-5 lg:p-20 text-center max-w-screen-md w-full overflow-auto lg:text-3xl"> Ny EP: </h2>
         <CountdownTimer/>
       </section>
 
